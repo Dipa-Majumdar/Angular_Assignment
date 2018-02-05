@@ -9,9 +9,9 @@ export class HomeComponent implements OnInit  {
  	experiences : number[];
   qualifications: string[];
   coding_languages: string[];  
- new_coding_languages: string[];
+ new_coding_languages= [];
 
- //new_coding_languages=[];
+
 						
 
 
@@ -20,12 +20,12 @@ export class HomeComponent implements OnInit  {
   this.qualifications=['Graduation','under-graduation','post-graduation'];
   this.experiences=[1,2,3,4,5];
   this.coding_languages=['C/C++','Java','C#','Python','Ruby'];
-  this.new_coding_languages=[''];
+  
 
  }
 
   model = new Employee('','','','','','','', '',this.new_coding_languages);
- chk_lang(lang: string)
+   chk_lang(lang: string)
             { 
               var flag=0;
                 for(var i=0;i<5;i++)
