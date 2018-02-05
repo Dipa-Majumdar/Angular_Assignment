@@ -1,7 +1,7 @@
 <div class="container">
 
 <h3>Employee Management Application</h3>
-		<form #form="ngForm" (ngSubmit)="onSubmit()">
+		<form #form="ngForm" >
 			<div class="form-group">
 			<label id="fname" >First Name:</label><br>
 			<input type="text" id="fname" name="FirstName" 
@@ -71,7 +71,9 @@
 				
 			
 		<br><br>
-				<button class="btn btn-primary" type="submit" id="submit"  >Submit</button>
+		<input type="button" class="btn btn-primary" (click)="onSubmit()">
+
+			<!--<button class="btn btn-primary" type="submit" id="submit">Submit</button>-->
 				</form>
 		
 		</div>
