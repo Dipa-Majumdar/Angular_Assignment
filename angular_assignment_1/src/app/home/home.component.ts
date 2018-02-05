@@ -8,7 +8,7 @@ import {Employee} from '../models/employee.model';
 export class HomeComponent implements OnInit  {
  	experiences : number[];
   qualifications: string[];
-  coding_languages=['C/C++','Java','C#','Python','Ruby'];
+  coding_languages: string[];
  new_coding_languages: string[];
  //new_coding_languages=[];
 						chk_lang(lang: string)
@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit  {
  ngOnInit(): void{
   this.qualifications=['Graduation','under-graduation','post-graduation'];
   this.experiences=[1,2,3,4,5];
+   this.coding_languages=['C/C++','Java','C#','Python','Ruby'];
   this.new_coding_languages=[];
 
  }
